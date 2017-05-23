@@ -163,8 +163,8 @@ def thrift_java_library(name, thrift_library, deps=[], visibility=None):
         name=name,
         srcs=[name + '_srcjar'],
         deps=deps + [
-            "@org.apache.thrift_libthrift//jar",
-            "@org.slf4j_slf4j-api//jar",
+            "@org_apache_thrift_libthrift//jar",
+            "@org_slf4j_slf4j_api//jar",
         ],
         visibility=visibility,
     )
